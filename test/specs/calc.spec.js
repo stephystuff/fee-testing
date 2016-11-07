@@ -1,9 +1,16 @@
 (function() {
     'use strict';
 
+var expect = chai.expect;
 
-    // TODO: Your tests go here!
+window.calc = window.calc || {};
 
+
+  describe('my app', function() {
+    it('should return the sum of an array of numbers', function() {
+      expect([5, 4, 8]).to.equal([17]);
+    });
+  });
 
 
 })();
