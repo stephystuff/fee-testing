@@ -16,9 +16,9 @@ window.calc = window.calc || {};
         expect(result).to.equal(17);
     });
 
-    it('shoud handle the function when no numbers are given', function(){
+    it('shoud handle the function when a string is given', function(){
         var result = window.calc.sum('balloons');
-        expect(result).to.not.be.a(num);
+        expect(result).to.equal('balloons');
     });
   });
 
