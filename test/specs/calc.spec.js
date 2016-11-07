@@ -30,10 +30,18 @@ window.calc = window.calc || {};
     it('should multiply the numbers together up to the chosen topNumber', function(){
       var resultTwo = window.calc.factorial(5);
       expect(resultTwo).to.equal(120);
-    })
+    });
 
+    it('should handle when a string other than "number" is listed as argument', function(){
+      var resultTwo = window.calc.factorial('balloons');
+      expect(resultTwo).to.equal(0);
+    });
 
-  })
+    it('should handle when no arguments are listed', function() {
+      var resultTwo = window.calc.factorial();
+      expect(resultTwo).to.equal(0);
+    });
+  });
 
 
 })();
