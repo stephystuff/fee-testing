@@ -15,6 +15,8 @@
 
         if (!numbers) {
             return total;
+        } else if (typeof(numbers) === 'string') {
+            return numbers;
         }
 
         numbers.forEach(function addThem(num) {
