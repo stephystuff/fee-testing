@@ -20,6 +20,7 @@
         numbers.forEach(function addThem(num) {
             total += num;
         });
+        return total;
     }
 
     /**
