@@ -26,6 +26,14 @@ window.calc = window.calc || {};
     });
   });
 
+  describe('factorial test', function(){
+    it('should multiply the numbers together up to the chosen topNumber', function(){
+      var resultTwo = window.calc.factorial(5);
+      expect(resultTwo).to.equal(120);
+    })
+
+
+  })
 
 
 })();
