@@ -3,8 +3,6 @@
 
 var expect = chai.expect;
 
-window.calc = window.calc || {};
-
   /**
    * [result description]
    * @type {[type]}
